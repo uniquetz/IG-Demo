@@ -1,0 +1,15 @@
+Logical: ImmunizationAllergyModel
+Title: "Immunization allergy information model"
+Description: "Immunization allergy information model"
+
+* patient 1..1 Reference "The person that has the allergy" "The person that has the allergy" 
+* allergen 1..1 CodeableConcept "The substance that the person is allergic to" "The sibstance - from the list of substance"
+* clinicalStatus 1..1 CodeableConcept "The status of the allergy-if it is confirmed or suspect"
+* recordedDate 0..1 dateTime "When the allergy was reported" "When the allergy was reported"
+* recorder 0..1 Reference "Who recorded the allergy" "Who recorded the allergy"
+* asserter 0..1 Reference "Who asserted the allergy" "Who asserted the allergy"
+* reactions 0..1 BackboneElement "know the past reaction to the allergy" "know the past reaction to the allergy"
+  * manifestation 0..1 CodeableConcept "How the reaction manifested itself" "How the reaction manifested itself" 
+  * certitude 0..1 CodeableConcept "How certain we are the cause of the reaction was the allergen indicated"
+  * exposure 0..1 CodeableConcept "The exposure route of the substance" "The exposure route of the substance"
+  * note 0..1 string "Additional text the allergy reaction"  "Additional text the allergy reaction"

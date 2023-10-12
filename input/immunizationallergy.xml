@@ -49,7 +49,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Home Page"/>
         <generation value="html"/>
       </page>
 
@@ -62,7 +62,7 @@
     <!-- change history page -->
       <page>
         <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
+        <title value="History"/>
         <generation value="html"/>
       </page>
     </page>
