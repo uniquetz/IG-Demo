@@ -6,7 +6,8 @@ Description: "Immunization Allergy profile"
 * patient MS
 * clinicalStatus 1..1 MS
 * verificationStatus 1..1 MS
-* code 1..1 MS
+* code 1..1 MS 
+* code from ImmunizationAllergyVS (extensible)
 * recordedDate MS
 * recorder MS
 * asserter MS
